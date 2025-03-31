@@ -27,7 +27,7 @@ Clone the repo and navigate to typescript_node folder
 
    ```bash
    # Clone the repo
-   git clone <repository-url>
+   git clone https://github.com/tusharsinghbisht/dockerized_templates.git
    
    # Navigate to the typescript_node template directory
    cd dockerized_templates/typescript_node
@@ -82,24 +82,3 @@ make prod-down
 ### Modifying TypeScript Configuration
 
 Edit the `tsconfig.json` file to customize TypeScript settings according to your project requirements.
-
-## Docker Configuration
-
-### Development (docker-compose.yml)
-
-- Uses Node development image
-- Mounts source code for hot reloading
-- Runs with Nodemon for automatic restarts
-
-### Production (Dockerfile)
-
-- Multi-stage build for smaller images
-- Properly handles node_modules
-- Runs with optimized Node settings
-
-## Scripts
-
-- `npm start`: Start the production server
-- `npm run dev`: Start development server with Nodemon
-- `npm run build`: Build TypeScript to JavaScript
-
